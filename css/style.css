@@ -1,0 +1,129 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  width: 100%;
+  background-color: rgb(61, 112, 61);
+}
+a{
+  color: rgb(66, 26, 2);
+  text-decoration: none;
+}
+
+/* ****************************************
+NAV
+******************************************* */
+nav{
+  position: fixed;
+  height: 100vh;
+  width: 8%;
+  background-color: rgb(168, 56, 56);
+  border-right: 10px solid rgb(221, 170, 107);
+  font-variant: small-caps;
+  font-size: 2.5rem;
+  z-index: 5;
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+nav li{
+  text-align: center;
+  padding: 1rem 0;
+}
+li:first-child{
+  margin-top: -4rem;
+}
+
+a:hover{
+  color: rgb(207, 163, 105);
+  text-decoration: underline;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.contentBox{
+  padding-left: 8%;
+  
+  width: 100%;
+  border-right: 10px solid rgb(207, 163, 105);
+}
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.headLine{
+  font-size: 6rem;
+  font-weight: 200;
+  text-align: center;
+  background-color: rgb(207, 163, 105);
+}
+
+h1{
+  padding: 3rem 0;
+  width: 100%;
+}
+
+/* *****************************************
+GALLERY
+******************************************** */
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  padding-top: 3rem;
+}
+.gallery img{
+  padding: 1rem;
+}
+#iOne,
+#iFour{
+  flex-grow: 3;
+}
+#iTwo,
+#iThree{
+  flex-grow: 2;
+}
+#iFive{
+  flex-grow: 10;
+}
