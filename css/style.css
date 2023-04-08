@@ -46,6 +46,11 @@ a{
   text-align: center;
 }
 
+.contentBox{
+  padding-left: 8%;
+  width: 100%;
+}
+
 
 /* ****************************************
 NAV
