@@ -23,16 +23,27 @@
 html{
   font-size: 62.5%;
 }
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: 3rem;
   width: 100%;
-  background-color: rgb(61, 112, 61);
+  background-image: url(https://images.pexels.com/photos/358532/pexels-photo-358532.jpeg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
 }
+
 a{
   color: rgb(66, 26, 2);
   text-decoration: none;
+}
+
+.headLine{
+  font-size: 10rem;
+  font-weight: 200;
+  text-align: center;
 }
 
 /* ****************************************
@@ -43,7 +54,7 @@ nav{
   height: 100vh;
   width: 8%;
   background-color: rgb(168, 56, 56);
-  border-right: 10px solid rgb(221, 170, 107);
+  border-right: 3px solid rgb(221, 170, 107);
   font-variant: small-caps;
   font-size: 2.5rem;
   z-index: 5;
@@ -74,9 +85,7 @@ a:hover{
 
 .contentBox{
   padding-left: 8%;
-  
   width: 100%;
-  border-right: 10px solid rgb(207, 163, 105);
 }
 
 
@@ -88,17 +97,24 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-.headLine{
-  font-size: 6rem;
-  font-weight: 200;
-  text-align: center;
-  background-color: rgb(207, 163, 105);
+main{
+ 
 }
 
 h1{
-  padding: 3rem 0;
-  width: 100%;
+  color: rgb(207, 163, 105);
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 5rem;
+  background-color: rgba(5, 28, 15, 0.844);
+  border-radius: 45%;
+  line-height: 25rem;
+  height: 25rem;
+  position: relative;
+  top: -190px;
+  z-index: 5;
 }
+
 
 /* *****************************************
 GALLERY
@@ -107,23 +123,51 @@ GALLERY
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-content: flex-start;
+  justify-content: center;
+  align-items: first baseline;
+  align-content: center;
   width: 100%;
-  padding-top: 3rem;
+  padding: 0 20rem 0 20rem;
 }
+
 .gallery img{
-  padding: 1rem;
+  padding: .2rem;
+  border: 3px solid rgb(207, 163, 105);
+  border-radius: 5%;
+  width: 30%;
 }
-#iOne,
-#iFour{
-  flex-grow: 3;
+.secondRow{
+  position: relative;
+  top: -250px;
 }
-#iTwo,
+#iOne{
+  position: relative;
+  top: -140px;
+  left: 40px;
+  z-index: 4;
+}
+#iTwo{
+  position: relative;
+  top: 40px;
+}
 #iThree{
-  flex-grow: 2;
+  position: relative;
+  top: -110px;
+  left: -40px;
+}
+#iFour{
+  position: relative;
+  top: -120px;
+  left: 80px;
 }
 #iFive{
-  flex-grow: 10;
+  position: relative;
+  top: -150px;
+  left: 20px;
+  z-index: 4;
+}
+#iSix{
+  position: relative;
+  top: -270px;
+  left: -20px;
 }
