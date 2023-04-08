@@ -27,11 +27,8 @@ html{
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/358532/pexels-photo-358532.jpeg);
-  background-size: cover;
-
   background-repeat: no-repeat;
 }
 
@@ -62,7 +59,7 @@ nav{
   background-color: rgb(168, 56, 56);
   border-right: 3px solid rgb(221, 170, 107);
   font-variant: small-caps;
-  font-size: 2.5rem;
+  font-size: 2rem;
   z-index: 5;
 }
 nav ul{
@@ -85,6 +82,11 @@ a:hover{
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1670px) {
+  nav{
+    font-size: 1.8rem;
+  }
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -100,7 +102,11 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-
+main{
+  background-image: url(https://images.pexels.com/photos/358532/pexels-photo-358532.jpeg);
+  background-size: cover;
+  height: 100vh;
+}
 h1{
   color: rgb(207, 163, 105);
   width: 75%;
@@ -139,6 +145,7 @@ GALLERY
 .secondRow{
   position: relative;
   top: -250px;
+  height: 40rem;
 }
 #iOne{
   position: relative;
@@ -162,7 +169,7 @@ GALLERY
 }
 #iFive{
   position: relative;
-  top: -150px;
+  top: -100px;
   left: 20px;
   z-index: 4;
 }
@@ -173,5 +180,7 @@ GALLERY
 }
 
 @media screen and (max-width: 1670px) {
- 
+    .gallery{
+      padding: 0 15rem;
+    }
 }
